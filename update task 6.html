@@ -1,0 +1,10 @@
+<input 
+  type="text" 
+  value={task.name}
+  onChange={(e) => onUpdate(task._id, { name: e.target.value })}
+/>
+<input 
+  type="checkbox" 
+  checked={task.completed}
+  onChange={() => onUpdate(task._id, { completed: !task.completed })}
+/>
